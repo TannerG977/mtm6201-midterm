@@ -5,103 +5,166 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
-    <link href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <picture>
-            <img src="images/pink-sky.jpg" alt="pink-skies" height="300px" width="100%">
-        </picture>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo">
-        </picture>
-        <h1>Drippi Memez</h1>
+        <div class="banner">
+            <picture>
+                <img class="logo" src="images/drippi-logo.png" alt="logo" height="100px" width="100px">
+            </picture>
+            <h1>Drippi Memez</h1>
+        </div>
         <nav>
             <div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About Us</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
                 </ul>
-                <form>
-                    <input class="searchbar" type="text" placeholder="Search">
-                    <button>&#x1F50D;&#xFE0E;</button>   
-                </form>
+                <div class="search">
+                    <form>
+                        <input class="searchbar" type="text" placeholder="Search">
+                        <button class="searchbutton">&#x1F50D;&#xFE0E;</button>   
+                    </form>
+                </div>
             </div> <!--end container-->
         </nav>
     </header>
     <main>
-       <h3>Featured Collection</h2> 
-       <p>Lorem ipsum dolor sit 
-        amet, consectetur 
-        adipiscing elit. 
-        Praesent finibus et ex 
-        eu hendrerit. Morbi 
-        scelerisque in leo a 
-        pellentesque. Aenean 
-        pellentesque 
-        </p>
+        <div class="featured">
+            <h3>Featured Collection</h3> 
+            <p class="placehold1">Lorem ipsum dolor sit 
+                amet, consectetur 
+                adipiscing elit. 
+                Praesent finibus et ex 
+                eu hendrerit. Morbi 
+                scelerisque in leo a 
+                pellentesque. Aenean 
+                pellentesque 
+            </p>
+        </div>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/white-shirt.png" alt="white-shirt" href="#">
-        </a>
-        <a href="#">$$$</a>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/blue-shirt.png" alt="white-shirt" href="#">
-        </a>
-        <a href="#">$$$</a>
+        <div class="productlist">
+            <div class="a">
+                <div class="product1">
+                    <a class="productlink" href="#">White Shirt</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/white-shirt.png" alt="white-shirt" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/pink-pants.png" alt="pink-pants" href="#">
-        </a>
-        <a href="#">$$$</a>
+            <div class="b">
+                <div class="product1">
+                    <a class="productlink" href="#">Blue Polka-Dot</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/blue-shirt.png" alt="white-shirt" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/black-pants.png" alt="black-pants" href="#">
-        </a>
-        <a href="#">$$$</a>
+            <div class="c">
+                <div class="product1">
+                    <a class="productlink" href="#">Pink Pants</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/pink-pants.png" alt="pink-pants" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/brown-jacket.png" alt="brown-jacket" href="#">
-        </a>
-        <a href="#">$$$</a>
+            <div class="d">
+                <div class="product1">
+                    <a class="productlink" href="#">Black Pants</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/black-pants.png" alt="black-pants" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
 
-        <a href="#">Title</a>
-        <a href="#">
-            <img src="images/green-dress.png" alt="green-dress" href="#">
-        </a>
-        <a href="#">$$$</a>
+            <div class="e">
+                <div class="product1">
+                    <a class="productlink" href="#">Brown Jacket</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/brown-jacket.png" alt="brown-jacket" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
+
+            <div class="f">
+                <div class="product1">
+                    <a class="productlink" href="#">Green Dress</a>
+                </div>
+                <div class="productimg">
+                    <a href="#">
+                        <img src="images/green-dress.png" alt="green-dress" href="#" width="275px" height="275px">
+                    </a>
+                </div>
+                <div class="product2">
+                    <a class="productlink" href="#">$$$</a>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <h4>About</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Shop</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="shop">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Help</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo">
-        </picture>
-    </footer>   
+        <div class="help">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </footer>
+    <picture>
+        <img class="footerlogo" src="images/drippi-logo.png" alt="logo" height="75px" width="75px">
+    </picture>   
 </body>
 </html>

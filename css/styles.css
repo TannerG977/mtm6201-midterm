@@ -46,3 +46,364 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
+/* Main Styles for Site */
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 600px) {
+
+	/*header*/
+
+	h1 {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		font-size: 40px;
+		padding-bottom: 30px;
+		padding-top: 5px;
+	}
+
+	.banner {
+		background-image: url(../images/pink-sky.jpg);
+		background-size: cover;
+	}
+
+	.logo {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	.nav {
+		display: inline;
+		font-family: Arial, Helvetica, sans-serif;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		background-color: #C2EABA;
+		border-radius: 20px;
+		border: 5px solid;
+		border-color: darkorchid;
+	}
+
+	.nav a {
+		color: #C5283D;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.navbar {
+		text-align: center;
+		padding: 20px;
+	}
+
+	body {
+		background-color: #EACBD2;
+	}
+
+	.searchbar {
+		height: 30px;
+		border-radius: 10px;
+		width: 80%;
+	}
+
+	.searchbutton {
+		height: 30px;
+		width: 30px;
+	}
+
+	.search {
+		text-align: center;
+	}
+
+	/* Products Section*/
+
+	.featured {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	h3 {
+		font-family: 'Tilt Warp', cursive;
+		font-size: 25px;
+		color: white;
+		padding-bottom: 10px;
+
+	}
+
+	.placehold1 {
+		color: white;
+		margin-left: 35%;
+		margin-right: 35%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+
+	.product1 {
+		text-align: center;
+		padding-bottom: 12px;
+		padding-top: 47px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.product2 {
+		text-align: center;
+		padding-top: 12px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.productimg {
+		text-align: center;
+	}
+
+	.productlink {
+		color: white;
+	}
+
+	.productlink:hover {
+		color: blue;
+	}
+
+	/* Footer*/
+
+	h4 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 40px;
+	}
+
+	.about li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.shop li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.help li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.footerlogo {
+		padding-top: 20px;
+		padding-bottom: 12px;
+		margin-left: 80%;
+	}
+}
+
+@media only screen and (max-width: 800px) and (min-width: 601px) {
+	h1 {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-transform: uppercase;
+		text-align: center;
+		color: white;
+		font-size: 50px;
+		padding-bottom: 40px;
+		padding-top: 10px;
+	}
+
+	.banner {
+		background-image: url(../images/pink-sky.jpg);
+		background-size: cover;
+	}
+
+	.logo {
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+
+	.nav {
+		display: inline;
+		font-family: Arial, Helvetica, sans-serif;
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #C2EABA;
+		border-radius: 30px;
+		border: 5px solid;
+		border-color: darkorchid;
+	}
+
+	.nav a {
+		color: #C5283D;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.navbar {
+		text-align: center;
+		padding: 30px;
+	}
+
+	body {
+		background-color: #EACBD2;
+	}
+
+	.searchbar {
+		height: 40px;
+		border-radius: 10px;
+		width: 80%;
+		font-size: 20px;
+	}
+
+	.searchbutton {
+		height: 40px;
+		width: 40px;
+	}
+
+	.search {
+		text-align: center;
+	}
+
+	.featured {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	h3 {
+		font-family: 'Tilt Warp', cursive;
+		font-size: 30px;
+		color: white;
+		padding-bottom: 10px;
+
+	}
+
+	.placehold1 {
+		color: white;
+		margin-left: 35%;
+		margin-right: 35%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+
+	.product1 {
+		text-align: center;
+		padding-bottom: 12px;
+		padding-top: 47px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.product2 {
+		text-align: center;
+		padding-top: 12px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.productimg {
+		text-align: center;
+	}
+
+	.productlink {
+		color: white;
+	}
+
+	.productlink:hover {
+		color: blue;
+	}
+
+	.productlist {
+		display: grid;
+		grid-template-areas: "a b"
+							 "c d"
+							 "e f";
+	}
+
+		/* Footer*/
+
+	h4 {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 22px;
+		padding-bottom: 10px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: space-evenly;
+		margin-top: 40px;
+	}
+
+	.about li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	.shop li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.help li {
+		padding: 5px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.footerlogo {
+		padding-top: 20px;
+		padding-bottom: 12px;
+		margin-left: 80%;
+	}
+
+		/* Footer*/
+
+		h4 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			padding-bottom: 10px;
+		}
+	
+		footer {
+			display: flex;
+			justify-content: space-evenly;
+			margin-top: 40px;
+		}
+	
+		.about li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.shop li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+		.help li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+		.footerlogo {
+			padding-top: 20px;
+			padding-bottom: 12px;
+			margin-left: 80%;
+		}
+
+}
