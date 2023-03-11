@@ -76,10 +76,8 @@ table {
 	}
 
 	.nav {
-		display: inline;
+		display: inline-block;
 		font-family: Arial, Helvetica, sans-serif;
-		padding-left: 40px;
-		padding-right: 40px;
 		padding-top: 6px;
 		padding-bottom: 6px;
 		background-color: #C2EABA;
@@ -90,6 +88,10 @@ table {
 
 	.nav a {
 		color: #C5283D;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 6px;
+		padding-bottom: 6px;
 	}
 
 	a:link {
@@ -319,6 +321,8 @@ table {
 	}
 }
 
+/*tablet styles*/
+
 @media only screen and (max-width: 800px) and (min-width: 601px) {
 	h1 {
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -341,10 +345,8 @@ table {
 	}
 
 	.nav {
-		display: inline;
+		display: inline-block;
 		font-family: Arial, Helvetica, sans-serif;
-		padding-left: 45px;
-		padding-right: 45px;
 		padding-top: 10px;
 		padding-bottom: 10px;
 		background-color: #C2EABA;
@@ -355,6 +357,10 @@ table {
 
 	.nav a {
 		color: #C5283D;
+		padding-left: 45px;
+		padding-right: 45px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 
 	a:link {
@@ -596,6 +602,8 @@ table {
 
 }
 
+/*desktop styles*/
+
 @media only screen and (min-width: 800px) {
 	h1 {
 		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -620,10 +628,8 @@ table {
 	}
 
 	.nav {
-		display: inline;
+		display: inline-block;
 		font-family: Arial, Helvetica, sans-serif;
-		padding-left: 60px;
-		padding-right: 60px;
 		margin-left: 25px;
 		margin-right: 25px;
 		padding-top: 15px;
@@ -636,6 +642,10 @@ table {
 
 	.nav a {
 		color: #C5283D;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 60px;
+		padding-right: 60px;
 	}
 
 	a:link {
@@ -886,3 +896,55 @@ table {
 
 			
 }
+
+/*Animations*/
+
+	/*picture animation*/
+
+	.productimg:hover {
+		transform: scale(1.040);
+		transition: ease-in 0.4s;
+	}
+
+	.productimg {
+		transform: scale(1);
+		transition: ease-out 0.4s;
+	}
+
+	/*nav button animation*/
+
+	.nav:hover {
+		background-color: #EACBD2;
+		transform: scale(1.030);
+		transition: ease-in 0.4s;
+	}
+
+/*Accessability*/
+
+	/*skip-links*/
+
+	.skip-links{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+	  }
+
+	.skip-links a{
+		position: absolute;
+		text-align: center;
+		top: -3em;
+		color:blue;
+		padding: .5em 1em;
+		font-weight: bold;
+	}
+
+	.skip-links a:focus{
+		top: 0;
+	}
+
+	.back {
+		text-align: start;
+		padding-bottom: 20px;
+		padding-left: 12px;
+	}
+	  

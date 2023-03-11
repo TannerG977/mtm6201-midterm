@@ -10,9 +10,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
+
+
 <body class="bodyhome">
+
+<!--Skip Links-->
+
+    <ul class="skip-links">
+        <li><a href="#main" aria-label="Go to main content">Skip to main content</a></li>
+        <li><a href="#footer" aria-label="Go to footer">Skip to footer</a></li>
+    </ul>
+
+<!--Header/Nav/Banner-->
+
     <header>
-        <div class="banner">
+        <div role="banner" class="banner">
             <picture>
                 <source media="(max-width: 800px)"
                         sizes="(max-width: 800px) 100px, 100px"
@@ -22,27 +34,30 @@
                         srcset="images/drippi-logo-400_x_400.png 400w">
                 <img class="logo" src="images/drippi-logo.png" alt="logo">
             </picture>
-            <h1>Drippi Memez</h1>
+            <h1 role="heading">Drippi Memez</h1>
         </div>
-        <nav>
+        <nav role="navigation">
             <div>
                 <ul class="navbar">
-                    <li class="nav"><a href="home.html">Home</a></li>
-                    <li class="nav"><a href="about.html">About Us</a></li>
-                    <li class="nav"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="home.html" aria-label="Go to home page">Home</a></li>
+                    <li class="nav"><a href="about.html" aria-label="Go to about page">About Us</a></li>
+                    <li class="nav"><a href="contact.html" aria-label="Go to contact page">Contact</a></li>
                 </ul>
                 <div class="search">
-                    <form>
+                    <form role="form">
                         <input class="searchbar" type="text" placeholder="Search">
                         <button class="searchbutton">&#x1F50D;&#xFE0E;</button>   
                     </form>
                 </div>
-            </div> <!--end container-->
+            </div> 
         </nav>
     </header>
-    <main>
-        <div class="featured">
-            <h3>Featured Collection</h3> 
+    <main id="main" role="main">
+
+<!--Main Article-->
+
+        <div role="article" class="featured">
+            <h3 role="heading">Featured Collection</h3> 
             <p class="placehold1">Lorem ipsum dolor sit 
                 amet, consectetur 
                 adipiscing elit. 
@@ -54,14 +69,15 @@
             </p>
         </div>
 
+<!--Products-->
 
         <div class="productlist">
             <div class="a">
                 <div class="product1">
-                    <a class="productlink" href="#">White Shirt</a>
+                    <a class="productlink" href="#" aria-label="Browse white shirt sizes">White Shirt</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse white shirt sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -75,16 +91,16 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse white shirt sizes">$$$</a>
                 </div>
             </div>
 
             <div class="b">
                 <div class="product1">
-                    <a class="productlink" href="#">Blue Polka-Dot</a>
+                    <a class="productlink" href="#" aria-label="Browse blue shirt sizes">Blue Polka-Dot</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse blue shirt sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -98,16 +114,16 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse blue shirt sizes">$$$</a>
                 </div>
             </div>
 
             <div class="c">
                 <div class="product1">
-                    <a class="productlink" href="#">Pink Pants</a>
+                    <a class="productlink" href="#" aria-label="Browse pink pants sizes">Pink Pants</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse pink pants sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -121,16 +137,16 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse pink pants sizes">$$$</a>
                 </div>
             </div>
 
             <div class="d">
                 <div class="product1">
-                    <a class="productlink" href="#">Black Pants</a>
+                    <a class="productlink" href="#" aria-label="Browse black pants sizes">Black Pants</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse black pants sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -144,16 +160,16 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse black pants sizes">$$$</a>
                 </div>
             </div>
 
             <div class="e">
                 <div class="product1">
-                    <a class="productlink" href="#">Brown Jacket</a>
+                    <a class="productlink" href="#" aria-label="Browse brown jacket sizes">Brown Jacket</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse brown jacket sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -167,16 +183,16 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse brown jacket sizes">$$$</a>
                 </div>
             </div>
 
             <div class="f">
                 <div class="product1">
-                    <a class="productlink" href="#">Green Dress</a>
+                    <a class="productlink" href="#" aria-label="Browse green dress sizes">Green Dress</a>
                 </div>
                 <div class="productimg">
-                    <a href="#">
+                    <a href="#" aria-label="Browse green dress sizes">
                         <picture>
                             <source media="(max-width: 1300px)"
                                     sizes="(max-width: 1300px) 275px, 275px"
@@ -190,36 +206,39 @@
                     </a>
                 </div>
                 <div class="product2">
-                    <a class="productlink" href="#">$$$</a>
+                    <a class="productlink" href="#" aria-label="Browse green dress sizes">$$$</a>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+
+<!--footer-->
+
+    <footer role="contentinfo" id="footer">
         <div class="about">
-            <h4>About</h4>
+            <h4 role="heading">About</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
 
         <div class="shop">
-            <h4>Shop</h4>
+            <h4 role="heading">Shop</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
 
         <div class="help">
-            <h4>Help</h4>
+            <h4 role="heading">Help</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
     </footer>
@@ -228,6 +247,10 @@
                 srcset="images/drippi-logo-200_x_200.png 200w">
 
         <img class="footerlogo" src="images/drippi-logo.png" alt="logo">
-    </picture>   
+    </picture><br>
+
+<!--back to top link-->
+
+    <a class="back" href="#top" aria-label="Go back to top">Back to Top</a> 
 </body>
 </html>

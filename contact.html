@@ -11,8 +11,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<!--Skip Links-->
+
+    <ul class="skip-links">
+        <li><a href="#main" aria-label="Go to main content">Skip to main content</a></li>
+        <li><a href="#footer" aria-label="Go to footer">Skip to footer</a></li>
+    </ul>
+
+<!--Header/Nav/Banner-->
+
     <header class="contactheader">
-        <div class="banner">
+        <div class="banner" role="banner">
             <picture>
                 <source media="(max-width: 800px)"
                         sizes="(max-width: 800px) 100px, 100px"
@@ -23,28 +33,31 @@
                         
                 <img class="logo" src="images/drippi-logo.png" alt="logo">
             </picture>
-            <h1>Drippi Memez</h1>
+            <h1 role="heading">Drippi Memez</h1>
         </div>
-        <nav>
+        <nav role="navigation">
             <div>
                 <ul class="navbar">
-                    <li class="nav"><a href="home.html">Home</a></li>
-                    <li class="nav"><a href="about.html">About Us</a></li>
-                    <li class="nav"><a href="contact.html">Contact</a></li>
+                    <li class="nav"><a href="home.html" aria-label="Go to home page">Home</a></li>
+                    <li class="nav"><a href="about.html" aria-label="Go to about page">About Us</a></li>
+                    <li class="nav"><a href="contact.html" aria-label="Go to contact page">Contact</a></li>
                 </ul>
                 <div class="contactsearch">
-                    <form>
+                    <form role="form">
                         <input class="searchbar" type="text" placeholder="Search">
                         <button class="searchbutton">&#x1F50D;&#xFE0E;</button>   
                     </form>
                 </div>
-            </div> <!--end container-->
+            </div> 
         </nav>
     </header>
-    <main>
-        <h2>Contact</h2>
+    <main id="main" role="main">
+        <h2 role="heading">Contact</h2>
         <div class="contactcontainer">
-            <form class="send-message" action="/action_page.php">
+
+<!--contact form-->
+
+            <form class="send-message" action="/action_page.php" role="form">
                 <label for="name">Name</label>
                 <input class="contacttext" type="text" id="name" name="name" placeholder="Your Name"><br><br>
                 <label for="email">Email</label>
@@ -53,46 +66,54 @@
                 <textarea class="contacttext" id="message" name="Your Message" placeholder="Your Message" rows="4" cols="50"></textarea>
                 <button class="sendbutton">Send</button>
             </form>
+
+<!--Locations/Phone-->
+        
             <div class="contactgriddy">
                 <div class="a">
                     <h3 class="contacth3">Locations</h3>
-                    <ul class="location-phone">
-                        <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
-                        <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
+                    <ul class="location-phone" itemscope itemtype="https://schema.org/Place">
+                        <li itemprop="address"><a href="#" aria-label="View address in google maps">120 Ipsum Rd. KZZ CZZ</a></li>
+                        <li itemprop="address"><a href="#" aria-label="View address in google maps">120 Ipsum Rd. KZZ CZZ</a></li>
                     </ul>
                 </div>
                 <div class="b">
-                    <h3 class="contacth3">Phone Number</h3>
-                    <p class="location-phone">(xxx)-(xxx)-(xxxx)</p>
+                    <h3 class="contacth3" role="heading">Phone Number</h3>
+                    <div itemscope itemtype="https://schema.org/LocalBusiness">
+                        <p itemprop="telephone" class="location-phone">(xxx)-(xxx)-(xxxx)</p>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
-    <footer>
+
+<!--Footer-->
+
+    <footer id="footer" role="contentinfo">
         <div class="about">
-            <h4>About</h4>
+            <h4 role="heading">About</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
 
         <div class="shop">
-            <h4>Shop</h4>
+            <h4 role="heading">Shop</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
 
         <div class="help">
-            <h4>Help</h4>
+            <h4 role="heading">Help</h4>
             <ul>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
-                <li><a href="#">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
+                <li><a href="#" aria-label="Footer link">Lorem</a></li>
             </ul>
         </div>
     </footer>
@@ -101,7 +122,11 @@
                 srcset="images/drippi-logo-200_x_200.png 200w">
 
         <img class="footerlogo" src="images/drippi-logo.png" alt="logo">
-    </picture>  
+    </picture><br>
+
+<!--skip link-->
+
+    <a class="back" href="#top" aria-label="Go back to top">Back to Top</a>  
     
 </body>
 </html>
