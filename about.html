@@ -6,68 +6,104 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <picture>
-            <img src="images/pink-sky.jpg" alt="pink-skies" height="300px" width="100%">
-        </picture>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo">
-        </picture>
-        <h1>Drippi Memez</h1>
+    <header class="aboutheader">
+        <div class="banner">
+            <picture>
+                <source media="(max-width: 800px)"
+                        sizes="(max-width: 800px) 100px, 100px"
+                        srcset="images/drippi-logo-200_x_200.png 200w">
+                <source media="(min-width: 800px)"
+                        sizes="(min-width: 800px) 150px, 150px"
+                        srcset="images/drippi-logo-400_x_400.png 400w">
+
+                <img class="logo" src="images/drippi-logo.png" alt="logo">
+            </picture>
+            <h1>Drippi Memez</h1>
+        </div>
         <nav>
             <div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About Us</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
                 </ul>
-                <form>
-                    <input class="searchbar" type="text" placeholder="Search">
-                    <button>&#x1F50D;&#xFE0E;</button>   
-                </form>
+                <div class="aboutsearch">
+                    <form>
+                        <input class="searchbar" type="text" placeholder="Search">
+                        <button class="searchbutton">&#x1F50D;&#xFE0E;</button>   
+                    </form>
+                </div>
             </div> <!--end container-->
         </nav>
     </header>
     <main>
         <h2>About Us</h2>
-        <h3>Founder</h3>
-        <picture>
-            <img src="images/jon-mama.png" alt="jon">
-        </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus et ex eu hendrerit. Morbi scelerisque in leo a pellentesque. Aenean pellentesque imperdiet augue interdum venenatis.Suspendisse id varius metus. Donec dictum sollicitudin turpis, eget pulvinar dui tincidunt eu. Quisque ullamcorper a sem at mattis. Vestibulum cursus turpis id iaculis commodo. Sed justo ante, volutpat a finibus quis, porttitor a augue. Mauris lobortis erat at ipsum ultricies, vitae pulvinar ligula vestibulum</p>
-        <h3>Our Practises</h3>
-        <picture>
-            <img src="images/tailor-kit.png" alt="tailor">
-        </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus et ex eu hendrerit. Morbi scelerisque in leo a pellentesque. Aenean pellentesque imperdiet augue interdum venenatis.Suspendisse id varius metus. Donec dictum sollicitudin turpis, eget pulvinar dui tincidunt eu. Quisque ullamcorper a sem at mattis. Vestibulum cursus turpis id iaculis commodo. Sed justo ante, volutpat a finibus quis, porttitor a augue. Mauris lobortis erat at ipsum ultricies, vitae pulvinar ligula vestibulum</p>
+        <div class="aboutcontainer">
+            <h3 class="abouth3">Founder</h3>
+            <picture>
+                <source media="(max-width: 600px)"
+                        sizes="100vw"
+                        srcset="images/jon-mama-450.png 450w">
+                <source media="(min-width: 600px)"
+                        sizes="100vw"
+                        srcset="images/jon-mama-350.png 350w">
+
+                <img class="jon" src="images/jon-mama.png" alt="jon">
+            </picture>
+            <p class="abouttext1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus et ex eu hendrerit. Morbi scelerisque in leo a pellentesque. Aenean pellentesque imperdiet augue interdum venenatis.Suspendisse id varius metus. Donec dictum sollicitudin turpis, eget pulvinar dui tincidunt eu. Quisque ullamcorper a sem at mattis. Vestibulum cursus turpis id iaculis commodo. Sed justo ante, volutpat a finibus quis, porttitor a augue. Mauris lobortis erat at ipsum ultricies, vitae pulvinar ligula vestibulum</p>
+            <h3 class="abouth3">Our Practises</h3>
+            <picture>
+                <source media="(max-width: 600px)"
+                        sizes="100vw"
+                        srcset="images/tailor-kit-450.png 450w">
+                <source media="(min-width: 600px)"
+                        sizes="100vw"
+                        srcset="images/tailor-kit-350.png 350w">
+
+                <img class="tailor" src="images/tailor-kit.png" alt="tailor">
+            </picture>
+            <p class="abouttext2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent finibus et ex eu hendrerit. Morbi scelerisque in leo a pellentesque. Aenean pellentesque imperdiet augue interdum venenatis.Suspendisse id varius metus. Donec dictum sollicitudin turpis, eget pulvinar dui tincidunt eu. Quisque ullamcorper a sem at mattis. Vestibulum cursus turpis id iaculis commodo. Sed justo ante, volutpat a finibus quis, porttitor a augue. Mauris lobortis erat at ipsum ultricies, vitae pulvinar ligula vestibulum</p>
+        </div>
     </main>
     <footer>
-        <h4>About</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Shop</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="shop">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Help</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo">
-        </picture>
-    </footer> 
+        <div class="help">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </footer>
+    <picture>
+        <source sizes="(min-width: 1px) 75px, 75px"
+                srcset="images/drippi-logo-200_x_200.png 200w">
+
+        <img class="footerlogo" src="images/drippi-logo.png" alt="logo">
+    </picture>  
     
 </body>
 </html>

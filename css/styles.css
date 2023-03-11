@@ -66,7 +66,7 @@ table {
 	}
 
 	.banner {
-		background-image: url(../images/pink-sky.jpg);
+		background-image: url(../images/pink-sky-900_x_360.jpg);
 		background-size: cover;
 	}
 
@@ -105,9 +105,10 @@ table {
 		padding: 20px;
 	}
 
-	body {
+	.bodyhome {
 		background-color: #EACBD2;
 	}
+
 
 	.searchbar {
 		height: 30px;
@@ -123,6 +124,7 @@ table {
 	.search {
 		text-align: center;
 	}
+
 
 	/* Products Section*/
 
@@ -208,6 +210,113 @@ table {
 		padding-bottom: 12px;
 		margin-left: 80%;
 	}
+
+
+	/*About Page*/
+
+	.aboutsearch {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	h2 {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		padding-left: 12px;
+		font-size: 30px;
+		margin-top: 12px;
+	}
+
+	.aboutheader {
+		background-color: #EACBD2;
+	}
+
+	.aboutcontainer {
+		margin-left: 32px;
+		margin-right: 32px;
+	}
+
+	.jon {
+		width: 100%;
+	}
+
+	.tailor {
+		width: 100%;
+	}
+
+	.abouttext1 {
+		font-family: Arial, Helvetica, sans-serif;
+		margin-top: 20px;
+		margin-bottom: 40px;
+	}
+
+	.abouttext2 {
+		font-family: Arial, Helvetica, sans-serif;
+		margin-top: 20px;
+		margin-bottom: 100px;
+	}
+
+	.abouth3 {
+		color: black;
+		padding-top: 30px;
+	}
+
+	/* Contact Page */
+
+	.contactheader {
+		background-color: #EACBD2;
+	}
+
+	.contactsearch {
+		text-align: center;
+		padding-bottom: 50px;
+	}
+
+	.contactcontainer {
+		margin-left: 32px;
+		margin-right: 32px;
+		margin-top: 20px;
+	}
+
+	.contacttext {
+		width: 100%;
+		border-radius: 5px;
+		padding: 10px;
+		font-family: Arial, Helvetica, sans-serif;
+		margin-top: 12px;
+	}
+
+	textarea {
+		height: 100px;
+	}
+
+	label {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.sendbutton {
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 15px;
+		padding-left: 40px;
+		padding-right: 40px;
+		padding-top: 6px;
+		padding-bottom: 6px;
+		background-color: #C2EABA;
+		border-radius: 20px;
+		border: 5px solid;
+		border-color: darkorchid;
+		margin-top: 20px;
+	}
+
+	.contacth3 {
+		color: black;
+		padding-top: 40px;
+	}
+
+	.location-phone {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 12px;
+		line-height: 30px;
+	}
 }
 
 @media only screen and (max-width: 800px) and (min-width: 601px) {
@@ -222,7 +331,7 @@ table {
 	}
 
 	.banner {
-		background-image: url(../images/pink-sky.jpg);
+		background-image: url(../images/pink-sky-900_x_360.jpg);
 		background-size: cover;
 	}
 
@@ -261,7 +370,7 @@ table {
 		padding: 30px;
 	}
 
-	body {
+	.bodyhome {
 		background-color: #EACBD2;
 	}
 
@@ -338,41 +447,6 @@ table {
 
 		/* Footer*/
 
-	h4 {
-		font-family: Arial, Helvetica, sans-serif;
-		font-size: 22px;
-		padding-bottom: 10px;
-	}
-
-	footer {
-		display: flex;
-		justify-content: space-evenly;
-		margin-top: 40px;
-	}
-
-	.about li {
-		padding: 5px;
-		font-family: Arial, Helvetica, sans-serif;
-	}
-	
-	.shop li {
-		padding: 5px;
-		font-family: Arial, Helvetica, sans-serif;
-	}
-
-	.help li {
-		padding: 5px;
-		font-family: Arial, Helvetica, sans-serif;
-	}
-
-	.footerlogo {
-		padding-top: 20px;
-		padding-bottom: 12px;
-		margin-left: 80%;
-	}
-
-		/* Footer*/
-
 		h4 {
 			font-family: Arial, Helvetica, sans-serif;
 			font-size: 22px;
@@ -406,4 +480,409 @@ table {
 			margin-left: 80%;
 		}
 
+		/*About Page*/
+
+		.aboutsearch {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+	
+		h2 {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding-left: 12px;
+			font-size: 35px;
+			margin-top: 12px;
+		}
+	
+		.aboutheader {
+			background-color: #EACBD2;
+		}
+	
+		.aboutcontainer {
+			margin-left: 32px;
+			margin-right: 32px;
+		}
+	
+		.jon {
+			width: 45%;
+			float: left;
+			padding-right: 12px;
+			padding-bottom: 12px;
+		}
+	
+		.tailor {
+			width: 45%;
+			float: left;
+			padding-right: 12px;
+			padding-bottom: 12px;
+		}
+	
+		.abouttext1 {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-bottom: 40px;
+			line-height: 20px;
+		}
+	
+		.abouttext2 {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-bottom: 100px;
+			line-height: 20px;
+		}
+
+		.abouth3 {
+			color: black;
+			padding-top: 30px;
+		}
+
+		/* Contact Page */
+
+		.contactheader {
+			background-color: #EACBD2;
+		}
+	
+		.contactsearch {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+	
+		.contactcontainer {
+			margin-left: 40px;
+			margin-right: 40px;
+			margin-top: 20px;
+		}
+	
+		.contacttext {
+			width: 100%;
+			border-radius: 5px;
+			padding: 10px;
+			font-family: Arial, Helvetica, sans-serif;
+			margin-top: 12px;
+		}
+	
+		textarea {
+			height: 100px;
+		}
+	
+		label {
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+		.sendbutton {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 15px;
+			padding-left: 40px;
+			padding-right: 40px;
+			padding-top: 6px;
+			padding-bottom: 6px;
+			background-color: #C2EABA;
+			border-radius: 20px;
+			border: 5px solid;
+			border-color: darkorchid;
+			margin-top: 20px;
+		}
+	
+		.contacth3 {
+			color: black;
+			padding-top: 40px;
+		}
+	
+		.location-phone {
+			font-family: Arial, Helvetica, sans-serif;
+			padding: 12px;
+			line-height: 30px;
+		}
+
+
+
+}
+
+@media only screen and (min-width: 800px) {
+	h1 {
+		font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		text-transform: uppercase;
+		color: white;
+		font-size: 60px;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		text-align: center;
+	}
+
+	header {
+		background-image: url(../images/pink-sky-1600_x_640.jpg);
+		background-size: cover;
+	}
+
+	.logo {
+		float: left;
+		padding-left: 12px;
+		padding-top: 12px;
+		position: absolute;
+	}
+
+	.nav {
+		display: inline;
+		font-family: Arial, Helvetica, sans-serif;
+		padding-left: 60px;
+		padding-right: 60px;
+		margin-left: 25px;
+		margin-right: 25px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: #C2EABA;
+		border-radius: 10px;
+		border: 5px solid;
+		border-color: darkorchid;
+	}
+
+	.nav a {
+		color: #C5283D;
+	}
+
+	a:link {
+		text-decoration: none;
+	}
+
+	a:hover {
+		text-decoration: underline;
+	}
+
+	.navbar {
+		text-align: center;
+		padding: 30px;
+	}
+
+	.searchbar {
+		height: 40px;
+		border-radius: 10px;
+		width: 675px;
+		font-size: 20px;
+		margin-top: 10px;
+	}
+
+	.searchbutton {
+		height: 40px;
+		width: 40px;
+	}
+
+	.search {
+		text-align: center;
+		padding-bottom: 40px;
+	}
+
+	.bodyhome {
+		background-color: #EACBD2;
+	}
+
+	.featured {
+		text-align: center;
+		padding-top: 30px;
+	}
+
+	h3 {
+		font-family: 'Tilt Warp', cursive;
+		font-size: 30px;
+		color: white;
+		padding-bottom: 10px;
+
+	}
+
+	.placehold1 {
+		color: white;
+		margin-left: 35%;
+		margin-right: 35%;
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: bold;
+	}
+
+	.product1 {
+		text-align: center;
+		padding-bottom: 12px;
+		padding-top: 47px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.product2 {
+		text-align: center;
+		padding-top: 12px;
+		font-family: 'Tilt Warp', cursive;
+		font-size: 20px;
+	}
+
+	.productimg {
+		text-align: center;
+	}
+
+	.productlink {
+		color: white;
+	}
+
+	.productlink:hover {
+		color: blue;
+	}
+
+	.productlist {
+		display: grid;
+		grid-template-areas: "a b c"
+							 "d e f";
+	}
+
+		/* Footer*/
+
+		h4 {
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 22px;
+			padding-bottom: 10px;
+		}
+	
+		footer {
+			display: flex;
+			margin-top: 40px;
+			justify-content: space-evenly;
+		}
+	
+		.about li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+		
+		.shop li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+		.help li {
+			padding: 5px;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+	
+		.footerlogo {
+			padding-top: 20px;
+			padding-bottom: 12px;
+			margin-left: 90%;
+		}
+
+		/*About Page*/
+
+		.aboutsearch {
+			text-align: center;
+			padding-bottom: 50px;
+		}
+	
+		h2 {
+			font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			padding-left: 24px;
+			font-size: 40px;
+			margin-top: 12px;
+		}
+	
+		.aboutheader {
+			background-color: #EACBD2;
+		}
+	
+		.aboutcontainer {
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+	
+		.jon {
+			width: 275px;
+			height: auto;
+			float: left;
+			padding-right: 12px;
+			padding-bottom: 12px;
+			
+		}
+	
+		.tailor {
+			width: 275px;
+			height: auto;
+			float: left;
+			padding-right: 12px;
+			padding-bottom: 12px;
+		}
+	
+		.abouttext1 {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-bottom: 15%;
+			line-height: 20px;
+		}
+	
+		.abouttext2 {
+			font-family: Arial, Helvetica, sans-serif;
+			margin-bottom: 200px;
+			line-height: 20px;
+		}
+
+		.abouth3 {
+			color: black;
+			padding-top: 30px;
+		}
+
+			/* Contact Page */
+
+			.contactheader {
+				background-color: #EACBD2;
+			}
+		
+			.contactsearch {
+				text-align: center;
+				padding-bottom: 50px;
+			}
+		
+			.contactcontainer {
+				margin-left: 15%;
+				margin-right: 15%;
+				margin-top: 20px;
+			}
+		
+			.contacttext {
+				width: 100%;
+				border-radius: 5px;
+				padding: 10px;
+				font-family: Arial, Helvetica, sans-serif;
+				margin-top: 12px;
+			}
+		
+			textarea {
+				height: 100px;
+			}
+		
+			label {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+		
+			.sendbutton {
+				font-family: Arial, Helvetica, sans-serif;
+				font-size: 15px;
+				padding-left: 40px;
+				padding-right: 40px;
+				padding-top: 6px;
+				padding-bottom: 6px;
+				background-color: #C2EABA;
+				border-radius: 20px;
+				border: 5px solid;
+				border-color: darkorchid;
+				margin-top: 20px;
+			}
+		
+			.contacth3 {
+				color: black;
+				padding-top: 60px;
+			}
+		
+			.location-phone {
+				font-family: Arial, Helvetica, sans-serif;
+				padding: 12px;
+				line-height: 30px;
+			}
+
+			.contactgriddy {
+				display: grid;
+				grid-template-areas: "a b";
+				text-align: center;
+				padding-bottom: 60px;
+			}
+
+			
 }

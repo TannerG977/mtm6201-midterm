@@ -6,74 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Midterm</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <picture>
-            <img src="images/pink-sky.jpg" alt="pink-skies" height="300px" width="100%">
-        </picture>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo" width="50px" height="50px">
-        </picture>
-        <h1>Drippi Memez</h1>
+    <header class="contactheader">
+        <div class="banner">
+            <picture>
+                <source media="(max-width: 800px)"
+                        sizes="(max-width: 800px) 100px, 100px"
+                        srcset="images/drippi-logo-200_x_200.png 200w">
+                <source media="(min-width: 800px)"
+                        sizes="(min-width: 800px) 150px, 150px"
+                        srcset="images/drippi-logo-400_x_400.png 400w">
+                        
+                <img class="logo" src="images/drippi-logo.png" alt="logo">
+            </picture>
+            <h1>Drippi Memez</h1>
+        </div>
         <nav>
             <div>
-                <ul>
-                    <li><a href="home.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="contact.html">Contact</a></li>
+                <ul class="navbar">
+                    <li class="nav"><a href="home.html">Home</a></li>
+                    <li class="nav"><a href="about.html">About Us</a></li>
+                    <li class="nav"><a href="contact.html">Contact</a></li>
                 </ul>
-                <form>
-                    <input class="searchbar" type="text" placeholder="Search">
-                    <button>&#x1F50D;&#xFE0E;</button>   
-                </form>
+                <div class="contactsearch">
+                    <form>
+                        <input class="searchbar" type="text" placeholder="Search">
+                        <button class="searchbutton">&#x1F50D;&#xFE0E;</button>   
+                    </form>
+                </div>
             </div> <!--end container-->
         </nav>
     </header>
     <main>
         <h2>Contact</h2>
-        <form class="send-message" action="/action_page.php">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name"><br><br>
-            <label for="email">Email</label>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="message">Message</label>
-            <textarea id="message" name="Your Message" rows="4" cols="50"></textarea>
-            <button>Send</button>
-        </form>
-        <h3>Locations</h3>
-        <ul>
-            <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
-            <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
-        </ul>
-        <h3>Phone Number</h3>
-        <p>(xxx)-(xxx)-(xxxx)</p>
+        <div class="contactcontainer">
+            <form class="send-message" action="/action_page.php">
+                <label for="name">Name</label>
+                <input class="contacttext" type="text" id="name" name="name" placeholder="Your Name"><br><br>
+                <label for="email">Email</label>
+                <input class="contacttext" type="text" id="email" name="email" placeholder="Your Email"><br><br>
+                <label for="message">Message</label>
+                <textarea class="contacttext" id="message" name="Your Message" placeholder="Your Message" rows="4" cols="50"></textarea>
+                <button class="sendbutton">Send</button>
+            </form>
+            <div class="contactgriddy">
+                <div class="a">
+                    <h3 class="contacth3">Locations</h3>
+                    <ul class="location-phone">
+                        <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
+                        <li><a href="#">120 Ipsum Rd. KZZ CZZ</a></li>
+                    </ul>
+                </div>
+                <div class="b">
+                    <h3 class="contacth3">Phone Number</h3>
+                    <p class="location-phone">(xxx)-(xxx)-(xxxx)</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <h4>About</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="about">
+            <h4>About</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Shop</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
+        <div class="shop">
+            <h4>Shop</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
 
-        <h4>Help</h4>
-        <ul>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-            <li><a href="#">Lorem</a></li>
-        </ul>
-        <picture>
-            <img src="images/drippi-logo.png" alt="logo">
-        </picture>
-    </footer> 
+        <div class="help">
+            <h4>Help</h4>
+            <ul>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+                <li><a href="#">Lorem</a></li>
+            </ul>
+        </div>
+    </footer>
+    <picture>
+        <source sizes="(min-width: 1px) 75px, 75px"
+                srcset="images/drippi-logo-200_x_200.png 200w">
+
+        <img class="footerlogo" src="images/drippi-logo.png" alt="logo">
+    </picture>  
     
 </body>
 </html>

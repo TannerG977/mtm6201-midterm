@@ -10,11 +10,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="bodyhome">
     <header>
         <div class="banner">
             <picture>
-                <img class="logo" src="images/drippi-logo.png" alt="logo" height="100px" width="100px">
+                <source media="(max-width: 800px)"
+                        sizes="(max-width: 800px) 100px, 100px"
+                        srcset="images/drippi-logo-200_x_200.png 200w">
+                <source media="(min-width: 800px)"
+                        sizes="(min-width: 800px) 150px, 150px"
+                        srcset="images/drippi-logo-400_x_400.png 400w">
+                <img class="logo" src="images/drippi-logo.png" alt="logo">
             </picture>
             <h1>Drippi Memez</h1>
         </div>
@@ -56,7 +62,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/white-shirt.png" alt="white-shirt" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/white-shirt-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/white-shirt-325_x_325.png 325w">
+
+                            <img src="images/white-shirt.png" alt="white-shirt">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -70,7 +85,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/blue-shirt.png" alt="white-shirt" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/blue-shirt-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/blue-shirt-325_x_325.png 325w">
+
+                            <img src="images/blue-shirt.png" alt="blue-shirt">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -84,7 +108,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/pink-pants.png" alt="pink-pants" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/pink-pants-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/pink-pants-325_x_325.png 325w">
+
+                            <img src="images/pink-pants.png" alt="pink-pants">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -98,7 +131,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/black-pants.png" alt="black-pants" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/black-pants-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/black-pants-325_x_325.png 325w">
+
+                            <img src="images/black-pants.png" alt="black-pants">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -112,7 +154,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/brown-jacket.png" alt="brown-jacket" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/brown-jacket-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/brown-jacket-325_x_325.png 325w">
+
+                            <img src="images/brown-jacket.png" alt="brown-jacket">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -126,7 +177,16 @@
                 </div>
                 <div class="productimg">
                     <a href="#">
-                        <img src="images/green-dress.png" alt="green-dress" href="#" width="275px" height="275px">
+                        <picture>
+                            <source media="(max-width: 1300px)"
+                                    sizes="(max-width: 1300px) 275px, 275px"
+                                    srcset="images/green-dress-300_x_300.png 300w">
+                            <source media="(min-width: 1300px)"
+                                    sizes="(min-width: 1300px) 325px, 325px"
+                                    srcset="images/green-dress-325_x_325.png 325w">
+
+                            <img src="images/green-dress.png" alt="green-dress">
+                        </picture>
                     </a>
                 </div>
                 <div class="product2">
@@ -164,7 +224,10 @@
         </div>
     </footer>
     <picture>
-        <img class="footerlogo" src="images/drippi-logo.png" alt="logo" height="75px" width="75px">
+        <source sizes="(min-width: 1px) 75px, 75px"
+                srcset="images/drippi-logo-200_x_200.png 200w">
+
+        <img class="footerlogo" src="images/drippi-logo.png" alt="logo">
     </picture>   
 </body>
 </html>
