@@ -914,9 +914,21 @@ table {
 	/*nav button animation*/
 
 	.nav:hover {
+		animation: size 0.4s ;
+		animation-fill-mode: forwards;
 		background-color: #EACBD2;
-		transform: scale(1.030);
 		transition: ease-in 0.4s;
+
+	}
+
+	@keyframes size {
+		0% {
+			transform: scale(1);
+		}
+
+		100% {
+			transform: scale(1.03);
+		}
 	}
 
 /*Accessability*/
